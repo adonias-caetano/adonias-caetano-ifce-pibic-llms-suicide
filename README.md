@@ -9,7 +9,7 @@ This repository provides LLMs codes used to identify suicidal ideation in non-cl
 Laís Carvalho Coutinho, Antonia Estefane Ribeiro Veras, Rosana Celine Pinheiro Damaceno, Adonias Caetano de Oliveira, and Ariel Soares Teles
 </p>
 
-This study is the result of three scientific initiation and technological development research projects, namely PIBIC/IFCE (2023-2024), PIBIC/IFCE (2024-2025), and PIBIT/IFCE (2024-2025).
+This study is the result of three scientific initiation and technological development research projects, namely PIBIC/IFCE (2023-2024), PIBIC/IFCE (2024-2025), and PIBITI/IFCE (2024-2025).
 
 <div align="justify">
 
