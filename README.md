@@ -1,17 +1,15 @@
  # Large Language Models in the Identification of Suicidal Ideation in Non-Clinical English Texts
 
-<p align="center">
-This repository provides LLMs codes used to identify suicidal ideation in non-clinical texts in English.
-</p>
-
-## :mortar_board: Authors
-<p align="center">
-Laís Carvalho Coutinho, Antonia Estefane Ribeiro Veras, Rosana Celine Pinheiro Damaceno, Adonias Caetano de Oliveira, and Ariel Soares Teles
-</p>
+This repository contains the code used to identify suicidal ideation in non-clinical English texts using Large Language Models (LLMs), including Machine Learning models and Colab scripts.
 
 This study is the result of three scientific initiation and technological development research projects, namely PIBIC/IFCE (2023-2024), PIBIC/IFCE (2024-2025), and PIBITI/IFCE (2024-2025).
 
-<div align="justify">
+The authors of this study are:
+* **Laís Carvalho Coutinho** contributed to manuscript writing, conducted computational experiments with the SDCNL dataset, and participated in manuscript revision.
+* **Antonia Estefane Ribeiro Veras** contributed to manuscript writing and conducted computational experiments with the SDD dataset.
+* **Rosana Celine Pinheiro Damaceno** contributed to manuscript writing.
+* **Adonias Caetano de Oliveira** reviewed the manuscript and computational experiments, acting as supervisor and project coordinator.
+* **Ariel Soares Teles** reviewed the manuscript and the results obtained.
 
  ## 📋 Requirements
 
@@ -23,14 +21,16 @@ This study is the result of three scientific initiation and technological develo
 * python matplotlib.pyplot library
 * python transformers library
 * python seaborn library
+* python torch library
 * python imblearn.under_sampling library
 * python sklearn.model_selection library
+* python lime library
 
 ## 📖  Dataset
 
-Two textual datasets were used in this study. The first dataset was the <a href="https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch"><strong>"Suicide and Depression Detection"t</strong></a> (SDD), available in the Kaggle repository. It is a collection of posts from the "SuicideWatch" and "depression" subreddits on the social network Reddit. The dataset has two main columns: "text" and "class". The "text" column contains the posts, while the "class" column indicates whether the post is classified as "suicide" or "non-suicide". The labelling process has not been validated by mental health professionals.
+Two textual datasets were used in this study. The first dataset was the <strong>["Suicide and Depression Detection"](https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch)</strong> (SDD), available in the Kaggle repository. It is a collection of posts from the "SuicideWatch" and "depression" subreddits on the social network Reddit. The dataset has two main columns: "text" and "class". The "text" column contains the posts, while the "class" column indicates whether the post is classified as "suicide" or "non-suicide". The labelling process has not been validated by mental health professionals.
 
-The second dataset was the <a href="https://github.com/ayaanzhaque/SDCNL"><strong>"Suicide vs Depression Classification"t</strong></a> (SDCNL), which gathers user posts extracted from the r/SuicideWatch and r/depression subreddits on Reddit, totalling 1,895 posts. Post texts from r/SuicideWatch were labelled as suicidal, while those from r/Depression were labelled as depressive. To validate the label correction methodology, the Reddit Suicide C-SSRS dataset was used, containing 500 posts from the r/Depression subreddit, classified by psychologists according to the Columbia Suicide Severity Rating Scale. Furthermore, validation was strengthened with the IMDB Large Movie Dataset, an NLP benchmark containing 50,000 polarised movie reviews.
+The second dataset was the <strong>["Suicide vs Depression Classification"](https://github.com/ayaanzhaque/SDCNL)</strong> (SDCNL), which gathers user posts extracted from the r/SuicideWatch and r/depression subreddits on Reddit, totalling 1,895 posts. Post texts from r/SuicideWatch were labelled as suicidal, while those from r/Depression were labelled as depressive. To validate the label correction methodology, the [Reddit Suicide C-SSRS dataset](https://zenodo.org/records/2667859) was used, containing 500 posts from the r/Depression subreddit, classified by psychologists according to the Columbia Suicide Severity Rating Scale. Furthermore, validation was strengthened with the [IMDB Large Movie Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews), an NLP benchmark containing 50,000 polarised movie reviews.
 
 The SDCNL is a modified combination of these datasets (n = 8853 sentences) for binary classification of clinically healthy versus suicidal texts, using posts from the r/CasualConversation and r/SuicideWatch subreddits. r/CasualConversation, a general conversation subreddit, was used as a reference for clinically healthy texts. The resulting samples were organised into two columns: "text", containing the textual content of the post, and "target", with the label assigned to the sample. The posts were labelled by experts in a binary manner, with "0" attributed to the absence of suicidal ideation (negative class) and "1" to the presence of suicidal ideation (positive class).
 
