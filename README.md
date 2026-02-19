@@ -49,8 +49,7 @@ The application of generative LLMs required prompt engineering to guide model ou
 
 ## 🤖 Access our submitted article
 
-Published paper in the <a href="https://sbbd.org.br/2025/eniac/"> <strong>35ª Conferência Brasileira de Sistemas Inteligentes (BRACIS)/Encontro Nacional de Inteligência Artificial e Computacional
- (ENIAC) </strong></a>
+Published paper in the <a href="https://journals-sol.sbc.org.br/index.php/reic/about"> <strong>Revista Eletrônica de Iniciação Científica em Computação (REIC)</strong></a>
 
 ### [Paper Link]() 
 
